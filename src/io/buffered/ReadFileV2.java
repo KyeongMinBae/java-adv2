@@ -19,7 +19,7 @@ public class ReadFileV2 {
         while((size = fis.read(buffer)) != -1) {
             fileSize += size;
         }
-
+        fis.close();
 
         long endTime = System.currentTimeMillis();
         System.out.println("File created:" + FILE_NAME);
